@@ -347,7 +347,7 @@ function ProductOverview() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="flex min-h-screen w-full flex-col justify-center py-16 md:py-24">
+    <section ref={sectionRef} className="relative z-10 flex min-h-screen w-full flex-col justify-center bg-bg py-16 md:py-24">
       <Shell>
         <div className="grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-center md:gap-16">
           <div>
@@ -554,7 +554,7 @@ function HybridEnergyManagement() {
   }, [active]);
 
   return (
-    <section ref={pinRef} className="flex h-screen w-full flex-col overflow-hidden pb-6 pt-24 md:pb-8 md:pt-28">
+    <section ref={pinRef} className="relative z-10 flex h-screen w-full flex-col overflow-hidden bg-bg pb-6 pt-24 md:pb-8 md:pt-28">
       <Shell className="flex flex-1 min-h-0 flex-col">
         {/*
           Top block — text left, image right. `flex-1 min-h-0` lets this row
@@ -952,7 +952,7 @@ function SmartFeatures() {
   return (
     <section
       ref={sectionRef}
-      className="flex min-h-screen w-full flex-col justify-start overflow-hidden pb-6 pt-24 md:pb-10 md:pt-28"
+      className="relative z-10 flex min-h-screen w-full flex-col justify-start overflow-hidden bg-bg pb-6 pt-24 md:pb-10 md:pt-28"
     >
       <Shell>
         <div className="grid gap-6 md:grid-cols-[1.4fr_1fr] md:items-end md:gap-12">
@@ -1564,7 +1564,7 @@ function RemoteControl() {
   return (
     <section
       ref={sectionRef}
-      className="flex h-screen w-full flex-col overflow-hidden pb-6 pt-24 md:pb-10 md:pt-28"
+      className="relative z-10 flex h-screen w-full flex-col overflow-hidden bg-bg pb-6 pt-24 md:pb-10 md:pt-28"
     >
       <Shell className="flex flex-1 min-h-0 flex-col">
         {/* Image — takes remaining vertical space, cross-fades on tab change.
@@ -1663,7 +1663,7 @@ function WhereSourceWorks() {
   return (
     <section
       ref={pinRef}
-      className="flex min-h-screen w-full flex-col justify-center overflow-hidden py-16 md:py-24"
+      className="relative z-10 flex min-h-screen w-full flex-col justify-center overflow-hidden bg-bg py-16 md:py-24"
     >
       <Shell>
         <AnimateIn className="text-center">
@@ -1758,7 +1758,7 @@ function MonitoringSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="flex min-h-screen flex-col justify-center pb-12 pt-28 md:pb-20 md:pt-32">
+    <section ref={sectionRef} className="relative z-10 flex min-h-screen flex-col justify-center bg-bg pb-12 pt-28 md:pb-20 md:pt-32">
       <Shell>
         <div className="grid gap-10 md:grid-cols-[1fr_1.1fr] md:items-center md:gap-16">
           {/* Left — phone mockup image */}
